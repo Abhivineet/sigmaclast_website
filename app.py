@@ -14,9 +14,9 @@ if __name__ == '__main__':
     app.debug =True
     app.run()
 
-@app.route('/')   
-def home():
-    return app.send_static_file("index.html") 
+# @app.route('/', methods=['GET', 'POST'])   
+# def home():
+#     return app.send_static_file("index.html") 
 
 def allowed_file(filename):
     return '.' in filename and \
@@ -24,7 +24,10 @@ def allowed_file(filename):
 
 @app.route('/', methods=['GET', 'POST'])
 def upload_file():
+
     if request.method == 'POST':
+        print('here')
+        print(request.files['file'])
         # check if the post request has the file part
         if 'file' not in request.files:
             flash('No file part')
@@ -39,5 +42,5 @@ def upload_file():
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             return redirect(url_for('uploaded_file',
-                                    filename=filename))
-    return
+                                    filename=filename))s
+    return app.send_static_file("index.html") 
