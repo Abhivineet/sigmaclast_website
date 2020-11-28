@@ -5,7 +5,7 @@
 - JavaScript
 - SCSS
 - CSS
-- NodeJS
+- Python
 
 ## Collaboration
 Please email clastsigma@gmail.com to use this project.
