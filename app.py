@@ -30,20 +30,18 @@ def allowed_file(filename):
 def upload_file():
 
     if request.method == 'POST':
-        print('here')
         if request.form:
-            # print(request.form)
-            # msg['From'] = request.form['email']
-            
-            # msg.set_content(request.form['message'] + '\n\n' + request.form['name'] + '\n' + request.form['phone'])
+
             with open("messages.txt", "a") as f:
                 f.write(request.form['name'] + '\t' + request.form['phone'] + '\t' + request.form['email'] + '\t' + request.form['message'])
+                f.write('\n')
+                f.write('\n')
             
         if request.files:        
                                                                         # check if the post request has the file part
             if 'file' not in request.files:
                 flash('No file part')
-                                                                        # return redirect(request.url)
+                # return redirect(request.url)
             file = request.files['file']
             print(type(file))
                                                                         # if user does not select file, browser also
