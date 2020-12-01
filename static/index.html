@@ -27,23 +27,7 @@
 
 <body>
 	<div class="image-container set-full-height" style="background-image: url('/static/assets/img/background.jpg')">
-	    <!--   Creative Tim Branding   -->
-	    <!-- <a href="http://creative-tim.com">
-	         <div class="logo-container">
-	            <div class="logo">
-	                <img src="assets/img/new_logo.png">
-	            </div>
-	            <div class="brand">
-	                Creative Tim
-	            </div>
-	        </div>
-	    </a> -->
 
-		<!--  Made With Material Kit  -->
-		<!-- <a href="http://demos.creative-tim.com/material-kit/index.html?ref=material-bootstrap-wizard" class="made-with-mk">
-			<div class="brand">MK</div>
-			<div class="made-with">Made with <strong>Material Kit</strong></div>
-		</a> -->
 
 	    <!--   Big container   -->
 	    <div class="container">
@@ -52,8 +36,6 @@
 		            <!--      Wizard container        -->
 		            <div class="wizard-container">
 		                <div class="card wizard-card" data-color="green" id="wizardProfile">
-		                    <form action="" method="">
-		                <!--        You can switch " data-color="purple" "  with one of the next bright colors: "green", "orange", "red", "blue"       -->
 
 		                    	<div class="wizard-header">
 		                        	<h3 class="wizard-title">
@@ -73,152 +55,77 @@
 		                            <div class="tab-pane" id="about">
 		                              <div class="row">
 		                                	<h4 class="info-text"> Vinni's about Us</h4>
-		                                	<!-- <div class="col-sm-4 col-sm-offset-1">
-		                                    	<div class="picture-container">
-		                                        	<div class="picture">
-                                        				<img src="assets/img/default-avatar.png" class="picture-src" id="wizardPicturePreview" title=""/>
-		                                            	<input type="file" id="wizard-picture">
-		                                        	</div>
-		                                        	<h6>Choose Picture</h6>
-		                                    	</div>
-		                                	</div>
-		                                	<div class="col-sm-6">
-												<div class="input-group">
-													<span class="input-group-addon">
-														<i class="material-icons">face</i>
-													</span>
-													<div class="form-group label-floating">
-			                                          <label class="control-label">First Name <small>(required)</small></label>
-			                                          <input name="firstname" type="text" class="form-control">
-			                                        </div>
-												</div>
-
-												<div class="input-group">
-													<span class="input-group-addon">
-														<i class="material-icons">record_voice_over</i>
-													</span>
-													<div class="form-group label-floating">
-													  <label class="control-label">Last Name <small>(required)</small></label>
-													  <input name="lastname" type="text" class="form-control">
-													</div>
-												</div>
-		                                	 </div>
-		                                	<div class="col-sm-10 col-sm-offset-1">
-												<div class="input-group">
-													<span class="input-group-addon">
-														<i class="material-icons">email</i>
-													</span>
-													<div class="form-group label-floating">
-			                                            <label class="control-label">Email <small>(required)</small></label>
-			                                            <input name="email" type="email" class="form-control">
-			                                        </div>
-												</div>
-		                                	</div>
-		                                	-->
 		                            	</div>
 		                            </div>
 		                            <div class="tab-pane" id="upload">
 		                                <h4 class="info-text"> If you're uploading multiple files, zip them together!</h4>
 		                                <div class="row">
 		                                    <div class="col-sm-10 col-sm-offset-1">
-		                                        <!-- <div class="col-sm-4">
-		                                            <div class="choice" data-toggle="wizard-checkbox">
-		                                                <input type="checkbox" name="jobb" value="Design">
-		                                                <div class="icon">
-		                                                    <i class="fa fa-pencil"></i>
-		                                                </div>
-		                                                <h6>Design</h6>
-		                                            </div>
-		                                        </div> -->
 		                                        <div class="col-sm">
-                                        <div class="choice" data-toggle="wizard-checkbox">
-		                                                
+                                        			<div class="choice" data-toggle="wizard-checkbox">    
 		                                                <div class="icon">
 		                                                	<label for="upload-file">
-		                                                    <i class="fa fa-upload">
-																</i></label>
+																<i class="fa fa-upload"></i>
+															</label>
 															<form method="post" enctype="multipart/form-data">
-																<input type="file" name="file" placeholder="" id="upload-file" accept="image/png, image/jpeg, zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed">
-																<input type="submit" class="btn btn-fill btn-success" style="background-color: rgba(108, 47, 23, 1)" value="Upload">
+																<input type="file" id="upload-file" name=file  accept="image/png, image/jpeg, zip,application/octet-stream,application/zip,application/x-zip,application/x-zip-compressed">
+																<input type="submit" id='submit-button' class="btn btn-fill btn-success" style="background-color: rgba(108, 47, 23, 1)" value=Upload>
 															</form>
 		                                                </div>
-
-		                                                
 		                                            </div>
 		                                        </div>
-		                                        <!-- <div class="col-sm-4">
-		                                            <div class="choice" data-toggle="wizard-checkbox">
-		                                                <input type="checkbox" name="jobb" value="Develop">
-		                                                <div class="icon">
-		                                                    <i class="fa fa-laptop"></i>
-		                                                </div>
-		                                                <h6>Develop</h6>
-		                                            </div>
-		                                        </div> -->
 		                                    </div>
 		                                </div>
 		                            </div>
 		                            <div class="tab-pane" id="contactUs">
 		                                <div class="row">
-		                                    <!-- <div class="col-sm-12">
-		                                        <h4 class="info-text"> Reach out to us </h4>
-		                                    </div> -->
-		                                    <div class="col-sm-5 col-sm-offset-1">
-	                                        	<div class="form-group label-floating">
-	                                        		<label class="control-label">Name</label>
-	                                    			<input type="text" class="form-control">
-	                                        	</div>
-		                                    </div>
-		                                    <div class="col-sm-5">
-		                                        <div class="form-group label-floating">
-		                                            <label class="control-label">Phone No.</label>
-		                                            <input type="text" class="form-control">
-		                                        </div>
-		                                    </div>
-		                                    <div class="col-sm-10 col-sm-offset-1">
-		                                        <div class="form-group label-floating">
-		                                            <label class="control-label">Email</label>
-		                                            <input type="text" class="form-control">
-		                                        </div>
-		                                    </div>
-		                                    <div class="col-sm-10 col-sm-offset-1">
-		                                        <div class="form-group label-floating">
-		                                            <label class="control-label">Message</label>
-	                               					<textarea rows="2" id="messageArea" class="form-control"></textarea>
-		                                        </div>
-		                                    </div>
-		                                    <div class="col-sm-10 col-sm-offset-1">
+											<form method="post" enctype="multipart/form-data">
+												<div class="col-sm-5 col-sm-offset-1">
+													<div class="form-group label-floating">
+														<label class="control-label">Name</label>
+														<input type="text" class="form-control" id="name" name="name">
+													</div>
+												</div>
+												<div class="col-sm-5">
+													<div class="form-group label-floating">
+														<label class="control-label">Phone No.</label>
+														<input type="text" class="form-control" id="phone" name="phone">
+													</div>
+												</div>
+												<div class="col-sm-10 col-sm-offset-1">
+													<div class="form-group label-floating">
+														<label class="control-label">Email</label>
+														<input type="text" name="email" class="form-control" id="email">
+													</div>
+												</div>
+												<div class="col-sm-10 col-sm-offset-1">
+													<div class="form-group label-floating">
+														<label class="control-label">Message</label>
+														<textarea rows="2" id="messageArea" class="form-control" name="message" id="message"></textarea>
+													</div>
+												</div>
+												<div class="col-sm-10 col-sm-offset-1">
+													<input type="submit" id='submit-button2' class="btn btn-fill btn-success" style="background-color: rgba(108, 47, 23, 1)" value=Submit>
 
-		                                    	<button id="detailSubmit" class="btn btn-fill btn-success" style="background-color: rgba(108, 47, 23, 1)">
-		                                    		Submit
-		                                    	</button>
-		                                    </div>
+													<!-- <button id="detailSubmit" class="btn btn-fill btn-success" style="background-color: rgba(108, 47, 23, 1)">
+														Submit
+													</button> -->
+												</div>
+											</form>
 		                                </div>
 		                            </div>
 		                        </div>
-		                        <!-- <div class="wizard-footer">
-		                            <div class="pull-right">
-		                                <input type='button' class='btn btn-next btn-fill btn-success btn-wd' name='next' value='Next' />
-		                                <input type='button' class='btn btn-finish btn-fill btn-success btn-wd' name='finish' value='Finish' />
-		                            </div>
 
-		                            <div class="pull-left">
-		                                <input type='button' class='btn btn-previous btn-fill btn-default btn-wd' name='previous' value='Previous' />
-		                            </div>
-		                            <div class="clearfix"></div> 
-		                        </div>-->
-		                    </form>
 		                </div>
-		            </div> <!-- wizard container -->
+		            </div>
 		        </div>
-	        </div><!-- end row -->
-	    </div> <!--  big container -->
-
-	    <div class="footer">
-	        <div class="container text-center">
-	             <!-- Made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com">Creative Tim</a>. Free download <a href="http://www.creative-tim.com/product/bootstrap-wizard">here.</a> -->
 	        </div>
-	    </div>
+	    </div> 
+
+	    <!-- <div class="footer">
+	        <div class="container text-center">
+	        </div>
+	    </div> -->
 	</div>
 
 </body>
@@ -232,6 +139,19 @@
 
     <!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
 	<script src="/static/assets/js/jquery.validate.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('input[type="file"]').change(function(e){
+				var fileName = e.target.files[0].name;
+				alert('The file "' + fileName +  '" has been selected. Please click upload');
+				
+			});
+			$('#submit-button').click(() => {
+				alert('The file has been uploaded.');
+			})
+		});
 
+
+	</script>
 
 </html>
